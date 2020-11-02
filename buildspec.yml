@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Node...
+      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+      - apt install -y nodejs
+
+  pre_build:
+    commands:
+      - echo Installing npm depends...
+      - npm install
+
+  build:
+    commands:
+      - echo Building...
+      - npm run build
+
+artifacts:
+  files:
+    - "**/*"
+    - ../../appspec.yml
+  discard-paths: no
+  base-directory: ./client/build
