@@ -5,7 +5,7 @@ import AlertState from "../src/context/alert/AlertState";
 import "babel-polyfill";
 import App from "../src/App.js";
 
-jest.mock("../src/utils/postRequest");
+//jest.mock("../src/utils/getRequest");
 
 describe("SearchForm Component tests", () => {
   test("Page renders with correct text.", () => {
@@ -16,11 +16,12 @@ describe("SearchForm Component tests", () => {
     );
 
     //Verify that expected text appears on the screen.
-    getByText("Enter Your Data");
-    getByPlaceholderText("Your Data.");
-    getByText("Send data.");
+    getByText("The news.");
+    getByText("Go");
+    getByText("Filters");
   });
 
+  /*
   test("Addition of new value to database causes success banner with correct text and class.", async () => {
     const { getByText, getByPlaceholderText, findByText } = render(
       <AlertState>
@@ -126,4 +127,5 @@ describe("SearchForm Component tests", () => {
     //See if the banner has the correct class name.
     expect(banner.className).toMatch(/alert-danger/i);
   });
+  */
 });

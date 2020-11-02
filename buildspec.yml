@@ -17,6 +17,17 @@ phases:
       - echo Building...
       - npm run build
 
+  post_build:
+    commands:
+      - echo running tests...
+      - npm run test
+
+reports:
+  jest_reports:
+    files:
+      - test_report.xml
+    base-directory: ./test_reports
+
 artifacts:
   files:
     - "**/*"
