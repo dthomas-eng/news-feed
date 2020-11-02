@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+}
+
+input,
+select {
+  display: inline-block;
+  width: 10em;
+}
+
+label {
+  display: inline-block;
+  width: 10em;
+  text-align: left;
+}
+
+.filter-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.filter-date {
+  border: none;
+  width: 12em;
+  height: 38px;
+  border-radius: 0px;
+}
+
+.filter-dropdown {
+  height: 38px;
+  border: none;
+  background: white;
+  color: black;
+  width: 8em;
+}
+
+.filter-dropdown:hover {
+  outline: 1px solid blue;
+}
+
+.custom-pagination {
+  display: inline-block;
+}
+
+.loader {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pag-row {
+  text-align: center;
+  margin: auto;
+}
+
+.btn-pag {
+  border-radius: 0;
+}
+
+.page-item {
+  background-color: "white";
+}
+.article-thumbnail {
+  border-radius: 0px;
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.article-img {
+  background: black;
+  background-size: cover;
+  filter: brightness(60%);
+  width: 100%;
+  height: 175px;
+  z-index: 500;
+}
+
+.article-img:hover {
+  filter: brightness(80%);
+}
+
+.article-text:hover + .article-img {
+  filter: brightness(80%);
+}
+
+.filler-article-img {
+  background: gray;
+  width: 100%;
+  height: 175px;
+  z-index: 500;
+}
+
+.filter-options {
+  background: black;
+  color: white;
+}
+
+.article-text {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 501;
+}
+
+.article-title-text {
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.article-date-text {
+  color: white;
+  font-size: 12pt;
+}
+
+Body {
+  font-family: "Poppins", sans-serif;
+}
+
+.square-border {
+  border-radius: 0px;
+  border: none;
+}
+
+.black-background {
+  background: black;
+}
+
+.btn-outline {
+  border: 2px white solid;
+  color: white;
+  transition: all 0.5s;
+  background: black;
+}
+
+.btn-outline:hover {
+  border: 2px white solid;
+  color: black;
+  transition: all 0.5s;
+  background: white;
+}
+
+.btn-outline:focus {
+  outline: 1px solid blue;
+}
+
+.center-jumbotron {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 600px;
+}
+
+.list-container {
+  flex-grow: 1;
+  height: auto;
+  max-height: calc(100vh - 200px);
+  overflow-y: scroll;
+  position: relative;
+  width: calc(100% + 7px);
+  right: -7px;
+  margin: 0 -7px;
+}
+
+.list-container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.input-temp-style {
+  max-width: 300px;
+}
+
+.page-background {
+  background: #f06;
+  /*background: linear-gradient(45deg, #2c3e50, #4ca1af),
+    linear-gradient(142deg, transparent, white),
+    linear-gradient(108deg, red, transparent);
+    */
+  width: 100%;
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .center-jumbotron {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
