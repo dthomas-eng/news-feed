@@ -1,6 +1,6 @@
 import { GET_ARTICLES, SET_LOADING, SET_FILTERS } from "../../types";
 
-export default (state, action) => {
+const listReducer = (state, action) => {
   switch (action.type) {
     case SET_FILTERS:
       return {
@@ -22,3 +22,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default listReducer;

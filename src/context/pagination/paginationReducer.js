@@ -1,6 +1,6 @@
 import { NEXT_PAGE, PREV_PAGE, SET_PAGES, SET_PAGE } from "../../types";
 
-export default (state, action) => {
+const paginationReducer = (state, action) => {
   switch (action.type) {
     case NEXT_PAGE:
       return {
@@ -26,3 +26,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default paginationReducer;
