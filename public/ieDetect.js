@@ -1,4 +1,4 @@
-//This script shows a warning at the top of the screen if the browser is IE. This app is semi-compatible with IE. To get full compatibility, a few styling issues would need to be addressed and a fallback dateselect would need to be added in the filters.
+//This script shows a warning at the top of the screen if the browser is IE. This app is not currently compatible with IE.
 
 if (/Trident\/|MSIE/.test(window.navigator.userAgent) === true) {
   //An div with id "browser-warning" is above the root in index.html.
@@ -6,7 +6,7 @@ if (/Trident\/|MSIE/.test(window.navigator.userAgent) === true) {
 
   //Add text and style that div.
   broswerWarning.innerHTML =
-    "Unsupported browser detected. Some features may not work. Use Chrome for best results.";
+    "Unsupported browser detected. IE is not currently supported by this app. Use Chrome for best results.";
   broswerWarning.style.backgroundColor = "red";
   broswerWarning.style.textAlign = "center";
 }
