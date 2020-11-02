@@ -1,5 +1,12 @@
-.App {
-  text-align: center;
+/* App-wide styles */
+Body {
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 10em;
+  text-align: left;
 }
 
 input,
@@ -8,10 +15,54 @@ select {
   width: 10em;
 }
 
-label {
-  display: inline-block;
-  width: 10em;
-  text-align: left;
+.App {
+  text-align: center;
+}
+
+/*The style for the container element for the app */
+.center-jumbotron {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 600px;
+}
+
+/*General button style*/
+.btn-outline {
+  border: 2px white solid;
+  color: white;
+  transition: all 0.5s;
+  background: black;
+}
+
+.btn-outline:hover {
+  border: 2px white solid;
+  color: black;
+  transition: all 0.5s;
+  background: white;
+}
+
+.btn-outline:focus {
+  outline: 1px solid blue;
+}
+
+/*Filter dropdown and search styles*/
+.filter-dropdown {
+  height: 38px;
+  border: none;
+  background: white;
+  color: black;
+  width: 8em;
+}
+
+.filter-dropdown:hover {
+  outline: 1px solid blue;
 }
 
 .filter-col {
@@ -27,28 +78,18 @@ label {
   border-radius: 0px;
 }
 
-.filter-dropdown {
-  height: 38px;
-  border: none;
-  background: white;
-  color: black;
-  width: 8em;
+.filter-options {
+  background: black;
+  color: white;
 }
 
-.filter-dropdown:hover {
-  outline: 1px solid blue;
+.input-max-width {
+  max-width: 300px;
 }
 
+/*Pagination styles*/
 .custom-pagination {
   display: inline-block;
-}
-
-.loader {
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .custom-pagination a {
@@ -67,9 +108,26 @@ label {
   border-radius: 0;
 }
 
-.page-item {
-  background-color: "white";
+/*Article and article list styles*/
+.list-container {
+  flex-grow: 1;
+  height: auto;
+  max-height: calc(100vh - 200px);
+  overflow-y: scroll;
+  position: relative;
+  width: calc(100% + 7px);
+  right: -7px;
+  margin: 0 -7px;
 }
+
+.list-container::-webkit-scrollbar {
+  width: 7px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
 .article-thumbnail {
   border-radius: 0px;
   width: 100%;
@@ -101,11 +159,6 @@ label {
   z-index: 500;
 }
 
-.filter-options {
-  background: black;
-  color: white;
-}
-
 .article-text {
   position: absolute;
   bottom: 5px;
@@ -124,10 +177,15 @@ label {
   font-size: 12pt;
 }
 
-Body {
-  font-family: "Poppins", sans-serif;
+.loader {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* multi-use styles */
 .square-border {
   border-radius: 0px;
   border: none;
@@ -137,98 +195,7 @@ Body {
   background: black;
 }
 
-.btn-outline {
-  border: 2px white solid;
-  color: white;
-  transition: all 0.5s;
-  background: black;
-}
-
-.btn-outline:hover {
-  border: 2px white solid;
-  color: black;
-  transition: all 0.5s;
-  background: white;
-}
-
-.btn-outline:focus {
-  outline: 1px solid blue;
-}
-
-.center-jumbotron {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 90%;
-  width: 90%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 600px;
-}
-
-.list-container {
-  flex-grow: 1;
-  height: auto;
-  max-height: calc(100vh - 200px);
-  overflow-y: scroll;
-  position: relative;
-  width: calc(100% + 7px);
-  right: -7px;
-  margin: 0 -7px;
-}
-
-.list-container::-webkit-scrollbar {
-  width: 7px;
-}
-
-.list-container::-webkit-scrollbar-thumb {
-  background-color: white;
-}
-
-.container {
-  max-width: 600px;
-}
-
-.input-temp-style {
-  max-width: 300px;
-}
-
-.page-background {
-  background: #f06;
-  /*background: linear-gradient(45deg, #2c3e50, #4ca1af),
-    linear-gradient(142deg, transparent, white),
-    linear-gradient(108deg, red, transparent);
-    */
-  width: 100%;
-  height: 100%;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* Media queries */
 @media only screen and (max-width: 575px) {
   .center-jumbotron {
     position: absolute;

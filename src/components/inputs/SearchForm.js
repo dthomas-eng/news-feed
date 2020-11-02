@@ -66,7 +66,7 @@ const SearchForm = () => {
     <Fragment>
       <h2 className='text-white'>The news.</h2>
       <form className='form-group m-0' onSubmit={onSubmit}>
-        <div className='input-group input-temp-style'>
+        <div className='input-group input-max-width'>
           <input
             id='searchString'
             type='text'
@@ -119,6 +119,7 @@ const SearchForm = () => {
               Sort By:
             </label>
             <select
+              data-testid='sortBy'
               name='sortBy'
               id='sortBy'
               className='filter-dropdown'

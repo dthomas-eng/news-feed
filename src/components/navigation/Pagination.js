@@ -38,7 +38,7 @@ const Pagination = () => {
   let nextButton = (
     <Fragment>
       {currentPage !== numberOfPages ? (
-        <a onClick={onClick} id='btn-next' href='/#'>
+        <a onClick={onClick} data-testid='btn-next' id='btn-next' href='/#'>
           <span id='btn-next'>&raquo;</span>
         </a>
       ) : (
@@ -53,7 +53,7 @@ const Pagination = () => {
   let prevButton = (
     <Fragment>
       {currentPage !== 1 ? (
-        <a onClick={onClick} id='btn-prev' href='/#'>
+        <a onClick={onClick} test-id='btn-prev' id='btn-prev' href='/#'>
           <span id='btn-prev'>&laquo;</span>
         </a>
       ) : (

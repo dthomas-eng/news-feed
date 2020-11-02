@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="22.04">
-  <testsuite name="SearchForm Component tests" errors="0" failures="0" skipped="0" timestamp="2020-11-02T07:09:40" time="17.551" tests="1">
-    <testcase classname="SearchForm Component tests Page renders with correct text." name="SearchForm Component tests Page renders with correct text." time="0.309">
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="24.449">
+  <testsuite name="SearchForm Component tests" errors="0" failures="0" skipped="0" timestamp="2020-11-02T20:35:21" time="19.244" tests="7">
+    <testcase classname="SearchForm Component tests Page loads, gets default data, and renders correct text." name="SearchForm Component tests Page loads, gets default data, and renders correct text." time="1.136">
+    </testcase>
+    <testcase classname="SearchForm Component tests Clicking filters causes filter options to appear." name="SearchForm Component tests Clicking filters causes filter options to appear." time="0.725">
+    </testcase>
+    <testcase classname="SearchForm Component tests Clicking on pagination arrows causes pagination to change and return correct data." name="SearchForm Component tests Clicking on pagination arrows causes pagination to change and return correct data." time="1.199">
+    </testcase>
+    <testcase classname="SearchForm Component tests Search for cat returns correct results." name="SearchForm Component tests Search for cat returns correct results." time="0.312">
+    </testcase>
+    <testcase classname="SearchForm Component tests Searching for cat and filterting by oldest returns correct data." name="SearchForm Component tests Searching for cat and filterting by oldest returns correct data." time="0.227">
+    </testcase>
+    <testcase classname="SearchForm Component tests Searching for a string that returns no results shows an alert with correct text and no paginiation." name="SearchForm Component tests Searching for a string that returns no results shows an alert with correct text and no paginiation." time="0.143">
+    </testcase>
+    <testcase classname="SearchForm Component tests Bad request - displays alert with correct text." name="SearchForm Component tests Bad request - displays alert with correct text." time="0.196">
     </testcase>
   </testsuite>
 </testsuites>
