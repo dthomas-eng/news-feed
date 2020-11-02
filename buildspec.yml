@@ -22,4 +22,4 @@ artifacts:
     - "**/*"
     - ../../appspec.yml
   discard-paths: no
-  base-directory: ./client/build
+  base-directory: ./build
