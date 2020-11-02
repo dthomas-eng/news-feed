@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="18.33">
-  <testsuite name="SearchForm Component tests" errors="0" failures="0" skipped="0" timestamp="2020-11-02T06:53:40" time="14.505" tests="1">
-    <testcase classname="SearchForm Component tests Page renders with correct text." name="SearchForm Component tests Page renders with correct text." time="0.352">
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="22.04">
+  <testsuite name="SearchForm Component tests" errors="0" failures="0" skipped="0" timestamp="2020-11-02T07:09:40" time="17.551" tests="1">
+    <testcase classname="SearchForm Component tests Page renders with correct text." name="SearchForm Component tests Page renders with correct text." time="0.309">
     </testcase>
   </testsuite>
 </testsuites>
